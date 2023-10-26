@@ -247,6 +247,8 @@ class MindFormerBook:
                 _PROJECT_PATH, "configs/bloom/run_bloom_65b.yaml")),
             ("bloom_176b", os.path.join(
                 _PROJECT_PATH, "configs/bloom/run_bloom_176b.yaml")),
+            ("rwkv", os.path.join(
+                _PROJECT_PATH, "configs/rwkv/run_rwkv.yaml")),
             ("baichuan_7b", os.path.join(
                 _PROJECT_PATH, "research/baichuan/run_baichuan_7b.yaml")),
             ("baichuan2_7b", os.path.join(
@@ -406,6 +408,8 @@ class MindFormerBook:
                 _PROJECT_PATH, "configs/bloom/run_bloom_65b.yaml")),
             ("bloom_176b", os.path.join(
                 _PROJECT_PATH, "configs/bloom/run_bloom_176b.yaml")),
+            ("rwkv", os.path.join(
+                _PROJECT_PATH, "configs/rwkv/run_rwkv.yaml")),
             ("baichuan_7b", os.path.join(
                 _PROJECT_PATH, "research/baichuan/run_baichuan_7b.yaml")),
             ("baichuan2_7b", os.path.join(
@@ -541,7 +545,10 @@ class MindFormerBook:
             'sam_vit_b',
             'sam_vit_l',
             'sam_vit_h'
-        ])
+        ]),
+        ('rwkv', [
+            'rwkv'
+        ]),
     ])
 
     _MODEL_SUPPORT_LIST = OrderedDict([
@@ -648,6 +655,10 @@ class MindFormerBook:
             'sam_vit_b',
             'sam_vit_l',
             'sam_vit_h'
+        ]),
+
+        ('rwkv', [
+            'rwkv'
         ])
     ])
 
@@ -725,6 +736,9 @@ class MindFormerBook:
             'sam_vit_b',
             'sam_vit_l',
             'sam_vit_h'
+        ]),
+        ('rwkv', [
+            'rwkv'
         ])
     ])
 
@@ -805,6 +819,9 @@ class MindFormerBook:
             'baichuan2_7b',
             'baichuan2_13b',
         ]),
+        ('rwkv', [
+            'rwkv'
+        ])
     ])
 
     _MODEL_CONFIG_TO_NAME = OrderedDict([
@@ -1259,7 +1276,9 @@ class MindFormerBook:
         ('PanguAlphaTokenizer', 'PanguAlphaProcessor'),
         ('BloomTokenizer', 'BloomProcessor'),
         ('InternLMTokenizer', 'LlamaProcessor'),
-        ('Baichuan2Tokenizer', 'LlamaProcessor')
+        ('Baichuan2Tokenizer', 'LlamaProcessor'),
+        ('RWKVTokenizer', 'RWKVProcessor'),
+
     ])
 
     @classmethod

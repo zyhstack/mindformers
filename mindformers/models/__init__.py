@@ -29,6 +29,7 @@ from .pangualpha import *
 from .filip import *
 from .bloom import *
 from .sam import *
+from .rwkv import *
 from .base_tokenizer import *
 from .base_config import BaseConfig
 from .base_model import BaseModel
@@ -56,3 +57,4 @@ __all__.extend(pangualpha.__all__)
 __all__.extend(filip.__all__)
 __all__.extend(bloom.__all__)
 __all__.extend(base_tokenizer.__all__)
+__all__.extend(rwkv.__all__)
